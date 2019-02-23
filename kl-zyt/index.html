@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/mian.css">
+</head>
+<body>
+    <div class="main-container">
+    	<!--背景-->
+    	<div class="bg-container fixed">
+    		<div class="bg-wrapper cont-wrapper">
+    			<img src="images/zyt-bg.jpg"/>
+    		</div>
+    	</div>
+    	<!--月亮层-->
+		<div class="month-container fixed">
+			<div class="cont-wrapper" id="month-wrapper">
+    			<img src="images/zyt-month.png"/>
+    		</div>
+		</div>
+		<!--石头层， 如果有的话-->
+		<div class="stone-container fixed">
+			<div class="cont-wrapper" id="stone-wrapper ">
+    			<img src="images/zyt-stone.png"/>
+    		</div>
+		</div>
+		<!--塔层-->
+		<div class="ta-container fixed">
+			<div class="cont-wrapper" id="ta-wrapper">
+    			<img src="images/zyt-ta-body.png"/>
+    		</div>
+		</div>
+    </div>
+    <div class="preload-container" id="preload-container">
+    	<!--loading页的视频存放位置-->
+    	<div class="video-container">
+    		
+    	</div>
+    	<!--loading页的 进度条-->
+    	<div class="process-container">
+        	<div id="loadingPage">
+        		<div class="loadingWrap">
+        			<div class="loadingBarbox">
+        				<div id="loadingBar"></div>
+        			</div>
+        			<span id="loadingNum">0%</span>
+        		</div>
+        	</div>
+    	</div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/Loading.jq.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
