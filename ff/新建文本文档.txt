@@ -1,0 +1,3 @@
+cd G:
+cd myproject init
+git init
