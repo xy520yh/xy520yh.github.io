@@ -13,7 +13,7 @@ function Loading (callBack){
        self.interval = setInterval(function(){
            self.progress += num;
            if(self.progress>=100) self.progress = 100;
-           self.bar.css('width' , self.progress + "%" );
+          // self.bar.css('width' , self.progress + "%" );
            self.numbox.text( self.progress + '%' );
            if(self.progress == 90 && !way){self.run(500,1,false);}
            if(self.progress == 99 && !way){clearInterval(self.interval);}

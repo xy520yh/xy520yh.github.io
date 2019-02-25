@@ -16,6 +16,7 @@
     			<img src="images/zyt-bg.jpg"/>
     		</div>
     	</div>
+        
     	<!--月亮层-->
 		<div class="month-container fixed">
 			<div class="cont-wrapper" id="month-wrapper">
@@ -30,29 +31,86 @@
 		</div>
 		<!--塔层-->
 		<div class="ta-container fixed">
+        	<div class="gifinner"></div>
+          
 			<div class="cont-wrapper" id="ta-wrapper">
-    			<img src="images/zyt-ta-body.png"/>
+              <img src="images/gif0.png"  class="face" style="display: block;"/>
+            	<!--<img class="face" style="display: block;" src="style/images/gif0.png"/>-->
+    			
     		</div>
 		</div>
+        <!--主题内容-->
+        <div class="index-content">
+            <a href="http://www.baidu.com" class="taptap_yuyue"></a>
+            <!--激活首测资格-->
+            <a href="javascript:void(0)" class="btn-play"></a>
+            <!--关注微博-->
+            <div class="weibo-box">
+                <span class="btn-weibo btn"></span>
+                <div class="weibo-content content">
+                    <span class="handle"></span>
+                    <img src="images/weibo.jpg" class="weibo ewm" alt="">
+                </div>
+            </div>
+            <div class="gzh-box">
+                <span class="btn-gzh btn"></span>
+                <div class="gzh-content content">
+                    <span class="handle"></span>
+                    <img src="images/gzh.jpg" class="gzh ewm" alt="">
+                </div>
+            </div>
+            <div class="qq-box">
+                <span class="btn-qq btn"></span>
+                <div class="qq-content content">
+                    <span class="handle"></span>
+                    <img src="images/qq.jpg" class="qq ewm" alt="">
+                </div>
+            </div>
+        </div>
+        <!--首次测试弹出-->
+        <div class="tan_ce">
+            <span class="bg"></span>
+            <div class="tan">
+            	<div class="close"><img src="images/video_pop_close.png"></div>
+        		<div class="btn1">
+       		   	 	<img src="images/yin_r.jpg"> 
+                </div>               
+                <div class="ma_download1">
+                    <span><input name="" type="radio" value=""></span><span>Android</span>
+                    <span><input name="" type="radio" value=""></span><span>iOS</span>
+                </div>
+                <div class="input1" >
+                	<P ><input name="" type="text"  class="text_content1"/></P>
+                </div>
+                <div class="login_btn"><a class='iframe' href="result.html"></a></div>
+                <div class="chaxun_btn" id="six"><a href="#"></a></div>
+                 
+        	</div>
+        </div>
     </div>
     <div class="preload-container" id="preload-container">
     	<!--loading页的视频存放位置-->
     	<div class="video-container">
-    		
+    		<video autobuffer="" autoloop="" autoplay loop class="bg" muted="">
+            	<source src="media/leaf.mp4">
+        	</video>
     	</div>
     	<!--loading页的 进度条-->
     	<div class="process-container">
         	<div id="loadingPage">
         		<div class="loadingWrap">
-        			<div class="loadingBarbox">
+        			<!--<div class="loadingBarbox">
         				<div id="loadingBar"></div>
-        			</div>
+        			</div>-->
+                    <div id="loader-wrapper"> 
+                        <div id="loader"></div> 
+                    </div> 
         			<span id="loadingNum">0%</span>
         		</div>
         	</div>
     	</div>
     </div>
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/Loading.jq.js"></script>
     <script src="js/main.js"></script>
 </body>
